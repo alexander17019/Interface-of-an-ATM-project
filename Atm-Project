@@ -1,0 +1,61 @@
+name = input("What is your name ? \n")
+allowedUsers = ['Seyi','Mike','Love']
+allowedPassword = ['passwordSeyi','passwordMike','passwordLove']
+
+if(name in allowedUsers):
+    password = input("Your password? \n")
+    userId = allowedUsers.index(name)
+
+    if(password == allowedPassword[userId]):
+
+       from  datetime import datetime
+
+def main():
+        today = datetime.now()
+        print("The current date and time is", today)
+
+if __name__ == "__main__":
+    main()    
+
+
+    print("Welcome %s" % name) 
+while True :    
+    print('these are the avaliable options:')
+    print('1. Withdrawal')
+    print('2. Cash Deposit')
+    print('3. Complaint')
+    print('4. Quit')
+
+    selectedOption = int(input('Please select an option:'))
+
+    if(selectedOption == 1):
+        Withdrawal = int(input('Please how much would you like to withdrawal?: '))
+
+        print('Take your cash,Transaction complete')
+
+
+
+    elif(selectedOption == 2):
+          Deposit = int(input('Please how much would you like to deposit?: '))
+          
+
+          print("Current_balance(undefined)")
+
+    elif(selectedOption == 3):
+         Complaint = str(input('What issue would you like to report?: '))
+
+         print('Thank you for contacting us')
+
+    elif(selectedOption == 4):
+         Quit = input('Do you want to quit?: Enter  \'q\'!')   
+         if Quit == 'q':
+             break
+
+         
+
+    else:
+            print('Invalid option selected, please try again') 
+
+else:
+
+    print("Name not found, please try again")      
